@@ -1,0 +1,36 @@
+/*
+* Created by Zeitfrei on 29.04.2014
+*/
+
+#include <iostream>
+
+using namespace std;
+
+long long GET_largest_prime (long long);
+
+int main ()
+{
+	long long number = 600851475143;
+	cout 
+	<< "The largest prime factor of the number " << number << " is: " << GET_largest_prime(number) << ".";
+	return 0;
+}
+
+long long GET_largest_prime(long long number)
+{
+	if(number == 1)
+		return 1;
+
+	long long lprime = 2;
+
+	while (number > 1)
+	{
+		if(number % lprime == 0)
+			number = number / lprime;
+		else
+			lprime++;
+	}
+
+	return lprime;
+}
+

@@ -1,0 +1,47 @@
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+
+ArrayList<Integer> primefactors;
+ArrayList<Integer> primes;
+int number;
+
+int main()
+{
+	number = 13195;
+	primes_upto(number);
+
+	primzahlen bis zur nummer in array sortiert von klein nach groß
+
+	größte primzahl... ist diese zahl 
+
+	ist x durch eine der primzahlen ganzzahlig teilbar
+	ist ergebnis eine primzahl - fertig
+	ist ergebnis durch kleine primzahl wieder teilbar?
+	... bis bei 2 angekommen
+}
+
+void primes_upto(int i)
+{
+	sieb von atkin
+	result in primefactors;
+}
+
+
+if(prime == 1)
+	return 1
+
+lprime = 2
+
+while (prime > 1)
+{
+	if(prime % lprime ==0)
+		prime = prime / lprime;
+	else
+		test++;
+}
+
+return lprime;
+
+
